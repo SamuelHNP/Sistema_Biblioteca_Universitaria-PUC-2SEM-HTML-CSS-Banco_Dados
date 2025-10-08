@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 40px;   /* título no topo */
+    margin-bottom: 50px;
+}
+
+.caixa-botoes {
+    display: inline-block;      /* a caixa se ajusta aos botões */
+    padding: 40px 60px;         /* espaço dentro da caixa */
+    border: 2px solid #ccc;     /* borda da caixa */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-top: 150px;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;   /* empilha os botões */
+    gap: 30px;                /* espaço maior entre eles */
+    align-items: center;      /* centraliza os botões na caixa */
+}
+
+.btn {
+    text-decoration: none;
+    padding: 20px 40px;       /* botões maiores */
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #3b7c94;
+    color: white;
+    cursor: pointer;
+    width: 300px;
+}
+
+.btn:hover {
+    background-color: #4899b7;
+}
