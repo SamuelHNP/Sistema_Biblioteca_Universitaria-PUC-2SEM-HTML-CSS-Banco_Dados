@@ -1,8 +1,10 @@
+/* ====== ESTILO GERAL ====== */
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
     text-align: center;
+    background-color: #f9f9f9;
 }
 
 h1 {
@@ -10,19 +12,22 @@ h1 {
     margin-bottom: 30px;
 }
 
+/* ====== CAIXA CENTRAL DO FORMULÁRIO ====== */
 .caixa-cadastro {
     display: inline-block;
-    padding: 40px 50px;
+    padding: 10px 30px; /* Reduzi o padding vertical de 40px para 20px */
     border: 2px solid #ccc;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    background-color: white;
 }
 
-/* Cada campo do formulário */
+
+/* ====== CAMPOS DO FORMULÁRIO ====== */
 .campo {
     display: flex;
     flex-direction: column; /* label em cima do input */
-    align-items: flex-start; /* label à esquerda */
+    align-items: flex-start;
     margin-bottom: 15px;
     width: 100%;
 }
@@ -40,13 +45,13 @@ h1 {
     border: 1px solid #ccc;
 }
 
-/* Botões */
+/* ====== BOTÕES ====== */
 .botoes {
     display: flex;
     flex-direction: row;
     gap: 20px;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .btn {
@@ -59,16 +64,35 @@ h1 {
     color: white;
     cursor: pointer;
     width: 200px;
+    text-align: center;
 }
 
 .btn:hover {
     background-color: #4899b7;
 }
 
-.btn.voltar {
-    background-color: #3b7c94;
+/* ====== MENSAGENS AO USUÁRIO ====== */
+#mensagem {
+    margin-top: 25px;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    display: none; /* começa invisível */
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.btn.voltar:hover {
-    background-color: #4899b7;
+/* Mensagem de sucesso (verde) */
+.sucesso {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+/* Mensagem de erro (vermelha) */
+.erro {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
 }

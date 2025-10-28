@@ -1,22 +1,29 @@
+/* Reset básico e fonte */
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
     text-align: center;
+    background-color: #f8f9fa; /* cor de fundo clara */
 }
 
+/* Estilo do título */
 h1 {
     margin-top: 40px;
     margin-bottom: 30px;
+    color: #333;
 }
 
+/* Caixa que envolve o formulário */
 .caixa-cadastro {
     display: inline-block;
-    padding: 40px 50px;
+    padding: 10px 30px; /* Reduzi o padding vertical de 40px para 20px */
     border: 2px solid #ccc;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    background-color: white;
 }
+
 
 /* Cada campo do formulário */
 .campo {
@@ -27,11 +34,13 @@ h1 {
     width: 100%;
 }
 
+/* Estilo do label */
 .campo label {
     margin-bottom: 5px;
     font-weight: bold;
 }
 
+/* Estilo do input */
 .campo input {
     width: 300px;
     padding: 12px;
@@ -40,7 +49,7 @@ h1 {
     border: 1px solid #ccc;
 }
 
-/* Botões */
+/* Botões do formulário */
 .botoes {
     display: flex;
     flex-direction: row;
@@ -49,6 +58,7 @@ h1 {
     margin-top: 50px;
 }
 
+/* Botões padrão */
 .btn {
     padding: 15px 30px;
     font-size: 18px;
@@ -60,14 +70,37 @@ h1 {
     width: 200px;
 }
 
+/* Efeito hover para botões */
 .btn:hover {
     background-color: #4899b7;
 }
 
-.btn.voltar {
-    background-color: #3b7c94;
+/* Área de mensagens */
+.mensagem {
+    margin: 15px auto;
+    padding: 10px 20px;
+    width: 400px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    display: none; /* inicialmente escondida */
+    transition: opacity 0.5s ease-in-out; /* fade */
 }
 
-.btn.voltar:hover {
-    background-color: #4899b7;
+/* Mensagem de sucesso */
+.mensagem.sucesso {
+    display: block;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    opacity: 1;
+}
+
+/* Mensagem de erro */
+.mensagem.erro {
+    display: block;
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    opacity: 1;
 }

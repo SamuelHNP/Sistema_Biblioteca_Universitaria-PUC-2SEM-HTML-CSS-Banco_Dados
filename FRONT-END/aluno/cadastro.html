@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,7 @@
 <body>
     <h1>CADASTRO</h1>
     
-      <div class="caixa-cadastro">
+    <div class="caixa-cadastro">
         <form class="formulario" id="form-cadastro-aluno">
             <div class="campo">
                 <label for="nome">Nome:</label>
@@ -43,12 +43,14 @@
             
             <div class="botoes">
                 <button type="submit" class="btn">Cadastrar</button>
-                <a href="tela_inicial.html" class="btn">Voltar</a>
+                <a href="tela_inicial.html" class="btn voltar">Voltar</a>
             </div>
         </form>
+
+        <!-- 💬 Div que exibirá mensagens para o usuário -->
+        <div id="mensagem"></div>
     </div>
 
     <script src="cadastro.js"></script>
-
 </body>
 </html>
