@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Livros</title>
+    <!-- Link do CSS externo -->
+    <link href="cadastro_livros.css" rel="stylesheet"/>
+</head>
+<body>
+    <!-- Título da página -->
+    <h1>CADASTRO DE LIVROS</h1>
+
+    <!-- Área para exibir mensagens de erro ou sucesso -->
+    <div id="mensagem" class="mensagem"></div>
+
+    <!-- Caixa de cadastro -->
+    <div class="caixa-cadastro">
+        <form class="formulario" id="form-cadastro-livro">
+            <!-- Campo de Título -->
+            <div class="campo">
+                <label for="titulo">Título:</label>
+                <input type="text" id="titulo" name="titulo" placeholder="Digite o Título" required>
+            </div>
+
+            <!-- Campo de Código -->
+            <div class="campo">
+                <label for="codigo">Código:</label>
+                <input type="number" id="codigo" name="codigo" placeholder="Digite o Código" required>
+            </div>
+
+            <!-- Campo de Editora -->
+            <div class="campo">
+                <label for="editora">Editora:</label>
+                <input type="text" id="editora" name="editora" placeholder="Digite a Editora" required>
+            </div>
+
+            <!-- Campo de Autor -->
+            <div class="campo">
+                <label for="autor">Autor:</label>
+                <input type="text" id="autor" name="autor" placeholder="Digite o Autor" required>
+            </div>
+
+            <!-- Campo de Ano -->
+            <div class="campo">
+                <label for="ano">Ano:</label>
+                <input type="number" id="ano" name="ano" placeholder="Digite o Ano" required>
+            </div>
+            
+<<<<<<< HEAD
+            <!-- Botões de Ação -->
+            <div class="botoes">
+                <button type="submit" class="btn">Cadastrar</button>
+                <button type="button" class="btn">Cancelar</button>
+=======
+            <div class="campo">
+                <label for="quantidade">Quantidade:</label>
+                <input type="number" id="quantidade" name="quantidade" placeholder="Digite a quantidade" required min="1">
+            </div>
+
+            <!-- Botões de Ação -->
+            <div class="botoes">
+                <button type="submit" class="btn">Cadastrar</button>
+                <a href="tela_inicial_bibliotecario.html" class="btn">Voltar</a>
+>>>>>>> bb50abb (Versão final)
+            </div>
+        </form>
+    </div>
+
+      <!-- 💬 Div que exibirá mensagens para o usuário -->
+    <div id="modal" class="modal">
+        <div class="modal-conteudo">
+        <p id="modal-texto"></p>
+        <button id="btn-ok">OK</button>
+        </div>
+    </div>
+
+    <!-- Script do JS para controlar o cadastro -->
+    <script src="cadastro_livro.js"></script>
+</body>
+</html>

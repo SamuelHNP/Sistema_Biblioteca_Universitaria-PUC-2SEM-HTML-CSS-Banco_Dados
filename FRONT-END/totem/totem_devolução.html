@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<<<<<<< HEAD
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devolução</title>
+    <link href="totem_devolução.css" rel="stylesheet"/>
+</head>
+<body>
+    <h1>DEVOLUÇÃO</h1>
+
+      <div class="caixa-cadastro">
+        <form class="formulario">
+            <div class="campo">
+                <label for="cod_livro">Código do Livro:</label>
+                <input type="number" id="cod_livro" name="cod_livro" placeholder="Digite o Código do Livro">
+            </div>
+
+            <div class="campo">
+                <label for="ra">RA:</label>
+                <input type="number" id="ra" name="ra" placeholder="Digite seu RA">
+            </div>
+            
+            <div class="botoes">
+                <button type="submit" class="btn">DEVOLVER</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+=======
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Totem - Devolução</title>
+    <!-- sem acento no nome do arquivo -->
+    <link rel="stylesheet" href="totem_devolução.css">
+</head>
+<body>
+
+    <h1>DEVOLUÇÃO DE LIVRO</h1>
+
+    <div class="caixa">
+        <form id="form-devolucao">
+            <div class="campo">
+                <label for="ra">RA do Aluno:</label>
+                <input type="number" id="ra" name="ra" placeholder="Digite o RA do aluno">
+            </div>
+
+            <div class="campo">
+                <label for="codigo">Código do Livro:</label>
+                <input type="number" id="codigo" name="codigo" placeholder="Digite o código do livro">
+            </div>
+
+            <div class="botoes">
+                <button type="submit" class="btn">Devolver</button>
+                <a href="totem_autoatendimento.html" class="btn voltar">Voltar</a>
+            </div>
+        </form>
+    </div>
+
+    <!-- Modal padrão (igual ao do cadastro) -->
+    <div id="modal" class="modal">
+        <div class="modal-conteudo">
+            <p id="modal-texto"></p>
+            <button id="btn-ok">OK</button>
+        </div>
+    </div>
+
+    <script src="totem_devolucao.js"></script>
+</body>
+</html>
+>>>>>>> bb50abb (Versão final)

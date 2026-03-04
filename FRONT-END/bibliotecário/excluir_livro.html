@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excluir Livro</title>
+    <link rel="stylesheet" href="excluir_livro.css">
+</head>
+<body>
+    <h1>Excluir Livro</h1>
+
+    <div class="caixa-cadastro">
+        <form id="form-excluir-livro">
+            <div class="campo">
+                <label for="codigo">Código do Livro:</label>
+                <input type="number" id="codigo" name="codigo" placeholder="Digite o código do livro">
+            </div>
+
+            <div class="botoes">
+                <button type="submit" class="btn">Excluir Livro</button>
+                <a href="tela_inicial_bibliotecario.html" class="btn">Voltar</a>
+            </div>
+
+        </form>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-conteudo">
+        <p id="modal-texto"></p>
+        <button id="btn-ok">OK</button>
+        </div>
+    </div>
+
+    <script src="excluir_livros.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento Geral</title>
+    <link rel="stylesheet" href="gerenciar_emprestimos.css">
+</head>
+<body>
+
+    <h1>GERENCIAMENTO GERAL</h1>
+
+    <div class="caixa">
+        <div class="conteudo">
+
+            <!-- ======================== -->
+            <!-- TABELA 1 - EMPRÉSTIMOS -->
+            <!-- ======================== -->
+            <h2>Lista completa de empréstimos</h2>
+
+            <table id="tabela-emprestimos">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Aluno</th>
+                        <th>RA</th>
+                        <th>Livro</th>
+                        <th>Status</th>
+                        <th>Data Retirada</th>
+                        <th>Data Devolução</th>
+                        <th>Pontuação</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-corpo">
+                    <!-- JS irá preencher -->
+                </tbody>
+            </table>
+
+
+            <!-- ======================== -->
+            <!-- TABELA 2 - LIVROS -->
+            <!-- ======================== -->
+            <h2 style="margin-top: 50px;">Lista completa de livros</h2>
+
+            <table id="tabela-livros">
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Título</th>
+                        <th>Editora</th>
+                        <th>Autor</th>
+                        <th>Ano</th>
+                        <th>Quantidade</th>
+                        <th>Disponíveis</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-livros-corpo">
+                    <!-- JS irá preencher -->
+                </tbody>
+            </table>
+
+            <div class="botoes">
+                <a href="tela_inicial_bibliotecario.html" class="btn voltar">Voltar</a>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="gerenciar_emprestimos.js"></script>
+</body>
+</html>

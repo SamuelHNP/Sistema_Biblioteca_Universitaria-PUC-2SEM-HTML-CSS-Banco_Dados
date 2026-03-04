@@ -1,0 +1,166 @@
+/* Reset básico e fonte */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f8f9fa; /* cor de fundo clara */
+}
+
+/* Estilo do título */
+h1 {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Caixa que envolve o formulário */
+.caixa-cadastro {
+    display: inline-block;
+    padding: 10px 30px; /* Reduzi o padding vertical de 40px para 20px */
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    background-color: white;
+}
+
+
+/* Cada campo do formulário */
+.campo {
+    display: flex;
+    flex-direction: column; /* label em cima do input */
+    align-items: flex-start; /* label à esquerda */
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+/* Estilo do label */
+.campo label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Estilo do input */
+.campo input {
+    width: 300px;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* Botões do formulário */
+.botoes {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    margin-top: 50px;
+}
+
+/* Botões padrão */
+.btn {
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    background-color: #3b7c94;
+    color: white;
+    cursor: pointer;
+    width: 200px;
+<<<<<<< HEAD
+=======
+    text-decoration: none; /* ← REMOVE o sublinhado */
+>>>>>>> bb50abb (Versão final)
+}
+
+/* Efeito hover para botões */
+.btn:hover {
+    background-color: #4899b7;
+}
+
+/* Área de mensagens */
+.mensagem {
+    margin: 15px auto;
+    padding: 10px 20px;
+    width: 400px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    display: none; /* inicialmente escondida */
+    transition: opacity 0.5s ease-in-out; /* fade */
+}
+
+/* Mensagem de sucesso */
+.mensagem.sucesso {
+    display: block;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    opacity: 1;
+}
+
+/* Mensagem de erro */
+.mensagem.erro {
+    display: block;
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    opacity: 1;
+}
+
+/* MODAL - MENSAGEM DE AVISO */
+.modal {
+    display: none; /* escondido por padrão */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6); /* fundo escuro translúcido */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-conteudo {
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    text-align: center;
+    max-width: 400px;
+    width: 80%;
+    animation: aparecer 0.3s ease-out;
+}
+
+.modal-conteudo p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.modal-conteudo button {
+    background-color: #3b7c94;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.modal-conteudo button:hover {
+    background-color: #4899b7;
+}
+
+@keyframes aparecer {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+/* Regra para marcar erros de validação via JS/Backend */
+.campo input.campo-invalido {
+    border: 2px solid red !important;
+    background-color: #ffe6e6 !important;
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+}
